@@ -10,9 +10,9 @@ int main() {
 	int w = 0;
 	// start comparing letters from the both of their last characters
 	while (true) {
-		// set the last index for the string 's'
+		// set the last index for the string 's' (and continue decrementing everytime 'w' is increasing)
 		int i = s.length() - w - 1;
-		// set the last index for the string 't'
+		// set the last index for the string 't' (and continue decrementing everytime 'w' is increasing)
 		int j = t.length() - w - 1;
 		if (i >= 0 && j >= 0 && s[i] == t[j]) {
 			// if the characters match, then increment 'w'
